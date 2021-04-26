@@ -16,12 +16,12 @@ useEffect(() => {
     netnetlifyIdentity.on('login', (user) => {
         setUser(user)
         netnetlifyIdentity.close()
-        console.log('login event')
+        console.log('New login event')
     })
 
     netnetlifyIdentity.on('logout', () => {
         setUser(null)
-        console.log('logout event')
+        console.log('New logout event')
     })
 
     //init netliyfy identity connection
